@@ -1182,6 +1182,8 @@ footer {
     width: 100%
 }
 
+
+
 .project-box {
     width: 100%;
     height: 400px;
@@ -1345,6 +1347,76 @@ footer {
     height: fit-content;
     border-top: 1px solid var(--tech-stack-box-border-color)
 }
+.footer-contact-form-container {
+    width: 100%;
+    max-width: 600px; /* Limite la largeur du formulaire sur les grands écrans */
+    margin: 0 auto 40px auto; /* Centre le formulaire et ajoute un espace en dessous */
+    text-align: center;
+}
+
+.footer-form-title {
+    font-size: 2.5rem; /* Utilise une taille de police cohérente avec vos titres de section */
+    font-family: 'Orbitron', sans-serif; /* Utilise la police de vos titres */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#footer-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espace entre les champs du formulaire */
+}
+
+#footer-contact-form input,
+#footer-contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f2f5; /* Fond gris clair comme sur l'image */
+    font-family: 'Fira Code', sans-serif; /* Police cohérente avec votre site */
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box; /* Assure que le padding n'affecte pas la largeur totale */
+    transition: box-shadow 0.3s ease;
+}
+
+#footer-contact-form input:focus,
+#footer-contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(70, 100, 255, 0.5); /* Effet visuel lors de la sélection */
+}
+
+#footer-contact-form input::placeholder,
+#footer-contact-form textarea::placeholder {
+    color: #999;
+}
+
+#footer-contact-form textarea {
+    resize: vertical; /* Permet de redimensionner verticalement la zone de texte */
+    min-height: 120px;
+}
+
+#footer-contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e2a4a; /* Bleu foncé comme sur l'image */
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#footer-contact-form button:hover {
+    background-color: #2c3e6b; /* Un peu plus clair au survol */
+    transform: translateY(-2px);
+}
+
+
 
 .footer-background {
     width: 100%;
